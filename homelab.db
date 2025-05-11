@@ -1,0 +1,5 @@
+$ORIGIN homelab.int.
+@     IN     SOA     dns.homelab.int. fake.email.int. 2015082541 7200 3600 1209600 3600
+@     IN     A       <my ip>
+dns   IN     CNAME   @
+*     IN     CNAME   @

@@ -1,0 +1,11 @@
+services:
+  coredns:
+    image: coredns/coredns:1.9.4
+    container_name: coredns
+    ports:
+      - <my ip>:53:53
+      - <my ip>:53:53/udp
+    volumes:
+      # - ./Corefile:/etc/coredns/Corefile
+      - ./Corefile:/Corefile
+      - ./homelab.db:/root/homelab.db
